@@ -57,7 +57,6 @@ encodings/hz*
 # unused python modules
 bsddb/*
 wsgiref/*
-sqlite3/*
 hotshot/*
 pydoc_data/*
 tty.pyo
@@ -83,7 +82,6 @@ lib-dynload/mmap.so
 lib-dynload/_hotshot.so
 lib-dynload/_csv.so
 lib-dynload/future_builtins.so
-lib-dynload/_lsprof.so
 lib-dynload/_heapq.so
 lib-dynload/_json.so
 lib-dynload/grp.so
@@ -92,3 +90,10 @@ lib-dynload/pyexpat.so
 
 # odd files
 plat-linux3/regen
+
+#>sqlite3
+# conditionnal include depending if some recipes are included or not.
+sqlite3/*
+lib-dynload/_sqlite3.so
+#<sqlite3
+
